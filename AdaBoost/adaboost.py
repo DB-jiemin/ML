@@ -80,9 +80,9 @@ class AdaboostClassifier(object):
 	    D = np.multiply(D, np.exp(expon)) # weights * exp(-1 * alpha * G(xi))
 	    ###################################################
 	    D = D/D.sum() # 归一化
-	    aggClassEst += alpha * classEst
+	    aggClassEst += alpha * classEst # aggregate class estimator 把所有的分类器预测出来的值合并起来
 	    aggErrors = np.multiply(np.sign(aggClassEst) != np.mat(y).T, np.ones((m, 1))) # 计算预测值和真实label的误差
-	    errorRate = aggErrors.sum()/m # 计算总的误差
+	    errorRate = aggErrors.sum()/m # 计算总误差
 	    if errorRate == 0.0: # 如果总误差为0.0,退出循环
 	        break
 	return weakClassEst # 返回所有的若分类器,即AdaBoost模型
