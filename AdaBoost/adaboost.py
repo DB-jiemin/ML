@@ -1,5 +1,8 @@
 #coding:utf-8
-
+#
+# 加法模型
+# 把每个基础分类器按照一定的权重加起来
+#
 import numpy as np
 
 class AdaboostClassifier(object):
