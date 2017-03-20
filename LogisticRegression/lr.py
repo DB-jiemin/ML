@@ -38,6 +38,9 @@ class LogisticRegression():
 		del(dataIndex[randIndex])
 	return weights
 
+    def validate(self, X, y,weights):
+        return self.predict(X, y, weights)
+
     def fit(self, train_x, train_y, alpha=0.01, maxCycles=100):
         return self._gradDescent(train_x, train_y, alpha, maxCycles)
 
@@ -49,15 +52,15 @@ class LogisticRegression():
 	error = 0.0
 	for i in range(m):
 	    if int(hx[i]) > 0.5:
-	        print str(i + 1) + '-th sample ', int(labelMat[i]), 'is classfied as: 1'
+	        #print str(i + 1) + '-th sample ', int(labelMat[i]), 'is classfied as: 1'
 		if int(labelMat[i]) != 1:
 		    error += 1.0
-		    print 'classify error.'
+		    #print 'classify error.'
 	    else:
-	        print str(i + 1) + '-th sample ', int(labelMat[i]), 'is classfied as: 0'
+	        #print str(i + 1) + '-th sample ', int(labelMat[i]), 'is classfied as: 0'
 		if int(labelMat[i]) != 0:
 		    error += 1.0
-		    print "classify error."
+		    #print "classify error."
 	error_rate = error/m
 	print "error rate is:", "%.4f" % error_rate
 	return error_rate
