@@ -1,0 +1,47 @@
+You have specified parameters: threshold=mu+/-0.30*sigma #fea=50 selection method=MID #maxVar=10000 #maxSample=1000
+
+Target classification variable (#1 column in the input data) has name=label 	entropy score=0.781
+
+*** MaxRel features ***
+Order 	 Fea 	 Name 	 Score
+1 	 5 	 marital-status 	 0.073
+2 	 1 	 age 	 0.061
+3 	 13 	 hours-per-week 	 0.058
+4 	 11 	 capital-gain 	 0.038
+5 	 4 	 education 	 0.021
+6 	 12 	 capital-loss 	 0.008
+7 	 3 	 fnlwgt 	 0.003
+8 	 10 	 sex 	 0.000
+9 	 7 	 e-serv 	 0.000
+10 	 9 	 race 	 0.000
+11 	 8 	 relationship 	 0.000
+12 	 2 	 workclass 	 0.000
+13 	 6 	 occupation 	 0.000
+
+*** mRMR features *** 
+Order 	 Fea 	 Name 	 Score
+1 	 5 	 marital-status 	 0.073
+2 	 1 	 age 	 0.044
+3 	 11 	 capital-gain 	 0.030
+4 	 13 	 hours-per-week 	 0.035
+5 	 12 	 capital-loss 	 0.004
+6 	 3 	 fnlwgt 	 0.001
+7 	 10 	 sex 	 0.000
+8 	 7 	 e-serv 	 0.000
+9 	 9 	 race 	 0.000
+10 	 8 	 relationship 	 0.000
+11 	 4 	 education 	 0.001
+12 	 2 	 workclass 	 0.000
+13 	 6 	 occupation 	 0.000
+14 	 14 	 native-country 	 0.000
+
+
+ *** This program and the respective minimum Redundancy Maximum Relevance (mRMR) 
+     algorithm were developed by Hanchuan Peng <hanchuan.peng@gmail.com>for
+     the paper 
+     "Feature selection based on mutual information: criteria of 
+      max-dependency, max-relevance, and min-redundancy,"
+      Hanchuan Peng, Fuhui Long, and Chris Ding, 
+      IEEE Transactions on Pattern Analysis and Machine Intelligence,
+      Vol. 27, No. 8, pp.1226-1238, 2005.
+
