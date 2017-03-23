@@ -4,6 +4,7 @@ import numpy as np
 import os
 
 class DecisionTree():
+
     def __init__(self, criteria="ID3"):
         self._tree = None
         if criteria == "ID3" or criteria == "C4.5":
